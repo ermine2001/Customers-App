@@ -1,6 +1,15 @@
 ## Customers-App
 
-*A window application written in Java with a graphical user interface, created using the Swing library*. It is used to perform operations on a customer database, where each customer has attributes such as: 1. first name 2. last name 3. status 4. VAT 5. point count 6. address 7. creation date.
+*A window application written in Java with a graphical user interface, created using the Swing library*.
+
+It is used to perform operations on a customer database, where each customer has attributes such as: 
+1. first name 
+2. last name 
+3. status (enum) 
+4. VAT
+5. point count
+6. address 
+7. creation date.
 Basic functionalities include:
 * adding a new customer 
 * displaying a list of customers 
