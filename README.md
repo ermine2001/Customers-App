@@ -12,12 +12,26 @@ It is used to perform operations on a customer database, where each customer has
 * creation date.
 
 Basic functionalities include:
-* adding a new customer 
+
 * displaying a list of customers 
+
+![scr 1](https://github.com/ermine2001/Customers-App/blob/main/screenshots/display_list.png)
+
+* adding a new customer 
+![scr 2](https://github.com/ermine2001/Customers-App/blob/main/screenshots/adding_customer.PNG)
+
 * deleting a customer by last name 
-* searching by last name 
-* sorting by point count in descending order 
+![scr 3](https://github.com/ermine2001/Customers-App/blob/main/screenshots/deleting_customer.PNG)
+
+
+* sorting by point count in descending order  
+* searching by last name
+![scr 4](https://github.com/ermine2001/Customers-App/blob/main/screenshots/find_by_lastname.png)
+
+
 * editing customer data - the methods have already been written - adding their handling to the interface is required.
 * customer division into groups - to be expanded in the future
+
+![scr 5](https://github.com/ermine2001/Customers-App/blob/main/screenshots/displaying_groups.PNG)
 
 Customer data is stored in RAM memory.
