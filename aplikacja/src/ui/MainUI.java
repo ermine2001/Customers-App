@@ -58,28 +58,28 @@ private void createTable() {
     Customer s13 = new Customer("Kamila", "Bąk", CustomerCondition.Inactive, 2001, 50.0, "Mokotowska 20", new Date());
     Customer s14 = new Customer("Jan", "Biel", CustomerCondition.Active, 1963, 60.0, "Mokotowska 20", new Date());
     Customer s15 = new Customer("Anna", "Biel", CustomerCondition.Inactive, 1970, 100.0, "Mokotowska 20", new Date());
-    Class klasa = new Class();
+    GroupCustomers data = new GroupCustomers();
     //dodawanie do grupy 1 - max 10 osob
     //zapelnienie 7/10
-    klasa.addCustomer_grupa1(s1);
-    klasa.addCustomer_grupa1(s2);
-    klasa.addCustomer_grupa1(s3);
-    klasa.addCustomer_grupa1(s4);
-    klasa.addCustomer_grupa1(s5);
-    klasa.addCustomer_grupa1(s6);
-    klasa.addCustomer_grupa1(s7);
-                /*klasa.addCustomer_grupa1(s8);
-                klasa.addCustomer_grupa1(s9);
-                klasa.addCustomer_grupa1(s10);*/
+    data.addCustomer_grupa1(s1);
+    data.addCustomer_grupa1(s2);
+    data.addCustomer_grupa1(s3);
+    data.addCustomer_grupa1(s4);
+    data.addCustomer_grupa1(s5);
+    data.addCustomer_grupa1(s6);
+    data.addCustomer_grupa1(s7);
+                /*data.addCustomer_grupa1(s8);
+                data.addCustomer_grupa1(s9);
+                data.addCustomer_grupa1(s10);*/
 
     ///dodawanie do grupy 2
-    klasa.addCustomer_grupa2(s8);
-    klasa.addCustomer_grupa2(s9);
-    klasa.addCustomer_grupa2(s10);
-    klasa.addCustomer_grupa2(s11);
-    klasa.addCustomer_grupa2(s12);
+    data.addCustomer_grupa2(s8);
+    data.addCustomer_grupa2(s9);
+    data.addCustomer_grupa2(s10);
+    data.addCustomer_grupa2(s11);
+    data.addCustomer_grupa2(s12);
 
-    Object[][] data = {{"grupa_1", klasa.getMax_gr1(), (double)(klasa.grupa_1.size())/(klasa.getMax_gr1())*100+"%"},{"grupa_2", klasa.getMax_gr2(), (klasa.grupa_2.size())/(klasa.getMax_gr2())*100+"%"},{"grupa_3", klasa.getMax_gr3(),(double) (klasa.grupa_3.size())/(klasa.getMax_gr3())*100+"%"}};
+    //Object[][] data = {{"grupa_1", data.getMax_gr1(), (double)(data.grupa_1.size())/(data.getMax_gr1())*100+"%"},{"grupa_2", data.getMax_gr2(), (data.grupa_2.size())/(data.getMax_gr2())*100+"%"},{"grupa_3", data.getMax_gr3(),(double) (data.grupa_3.size())/(data.getMax_gr3())*100+"%"}};
 
 }
 
@@ -105,81 +105,81 @@ private void createTable() {
         Customer s15 = new Customer("Anna", "Biel", CustomerCondition.Inactive, 1970, 100.0, "Mokotowska 20", new Date());
         s1.compareTo(s3);
         s1.compareTo(s2);
-        Class klasa = new Class();
+        GroupCustomers data = new GroupCustomers();
         s1.Wypisz();
         // dodawanie do listy roku
-        klasa.addCustomer(s1);
-        klasa.addCustomer(s2);
-        klasa.addCustomer(s3);
-        klasa.addCustomer(s4);
-        klasa.addCustomer(s5);
-        klasa.addCustomer(s6);
-        klasa.addCustomer(s7);
-        klasa.addCustomer(s8);
-        klasa.addCustomer(s9);
-        klasa.addCustomer(s10);
-        klasa.addCustomer(s11);
-        klasa.addCustomer(s12);
-        klasa.addCustomer(s13);
-        klasa.addCustomer(s14);
-        klasa.addCustomer(s15);
+        data.addCustomer(s1);
+        data.addCustomer(s2);
+        data.addCustomer(s3);
+        data.addCustomer(s4);
+        data.addCustomer(s5);
+        data.addCustomer(s6);
+        data.addCustomer(s7);
+        data.addCustomer(s8);
+        data.addCustomer(s9);
+        data.addCustomer(s10);
+        data.addCustomer(s11);
+        data.addCustomer(s12);
+        data.addCustomer(s13);
+        data.addCustomer(s14);
+        data.addCustomer(s15);
 
 
-        klasa.addPoints(s2, 1000.0);
+        data.addPoints(s2, 1000.0);
         //dodawanie do grupy 1 - max 10 osob
         //zapelnienie 7/10
-        klasa.addCustomer_grupa1(s1);
-        klasa.addCustomer_grupa1(s2);
-        klasa.addCustomer_grupa1(s3);
-        klasa.addCustomer_grupa1(s4);
-        klasa.addCustomer_grupa1(s5);
-        klasa.addCustomer_grupa1(s6);
-        klasa.addCustomer_grupa1(s7);
+        data.addCustomer_grupa1(s1);
+        data.addCustomer_grupa1(s2);
+        data.addCustomer_grupa1(s3);
+        data.addCustomer_grupa1(s4);
+        data.addCustomer_grupa1(s5);
+        data.addCustomer_grupa1(s6);
+        data.addCustomer_grupa1(s7);
 
 
         ///dodawanie do grupy 2
-        klasa.addCustomer_grupa2(s8);
-        klasa.addCustomer_grupa2(s9);
-        klasa.addCustomer_grupa2(s10);
-        klasa.addCustomer_grupa2(s11);
-        klasa.addCustomer_grupa2(s12);
+        data.addCustomer_grupa2(s8);
+        data.addCustomer_grupa2(s9);
+        data.addCustomer_grupa2(s10);
+        data.addCustomer_grupa2(s11);
+        data.addCustomer_grupa2(s12);
 
 
-        System.out.println("GRUPA 1 : \n" + klasa.grupa_1.toString() + "\n");
+        System.out.println("GRUPA 1 : \n" + data.grupa_1.toString() + "\n");
 
 
-        System.out.println("our full list : \n" + klasa.lista_Customerów.toString() + "\n");
-        klasa.removePoints(s1, 9.0);
+        System.out.println("our full list : \n" + data.lista_Customerów.toString() + "\n");
+        data.removePoints(s1, 9.0);
         System.out.println("\n after removing 9 points from customer 1:");
-        System.out.println("displaying list: \n" + klasa.lista_Customerów.toString() + "\n");
-        klasa.addPoints(s1, 9.0);
-        klasa.getCustomer(s1);
+        System.out.println("displaying list: \n" + data.lista_Customerów.toString() + "\n");
+        data.addPoints(s1, 9.0);
+        data.getCustomer(s1);
         System.out.println("checking if customer 1  exists: " + s1.firstname);
         // CompPunkty porownanie1 = new CompPunkty();
 
         System.out.println("sorted customer by points");
-        System.out.println("Group 1 : \n" + klasa.grupa_1.toString() + "\n");
+        System.out.println("Group 1 : \n" + data.grupa_1.toString() + "\n");
 
-        klasa.ChangeCondition(s1, CustomerCondition.Inactive);
+        data.ChangeCondition(s1, CustomerCondition.Inactive);
         s1.Wypisz();
 
-        Collections.max(klasa.lista_Customerów, new Comparator<Customer>() {
+        Collections.max(data.lista_Customerów, new Comparator<Customer>() {
             @Override
             public int compare(Customer o1, Customer o2) {
                 return 0;
             }
         });
 
-        //klasa.SortByPoints();
-        // System.out.println("our list: \n" +klasa.lista_Customerów.toString()+"\n");
+        //data.SortByPoints();
+        // System.out.println("our list: \n" +data.lista_Customerów.toString()+"\n");
 
-        // klasa.SortByNazwisko();
-        // System.out.println("our list: \n" +klasa.lista_Customerów.toString()+"\n");
+        // data.SortByNazwisko();
+        // System.out.println("our list: \n" +data.lista_Customerów.toString()+"\n");
 
         if (source == WyświetlListeButton) {
 
 
-            String tekst = klasa.lista_Customerów.toString();
+            String tekst = data.lista_Customerów.toString();
             textArea1.append(tekst + newline);
 
         }
@@ -191,8 +191,8 @@ private void createTable() {
             s.lastname = lastname;
             s.firstname = firstname;
 
-            klasa.lista_Customerów.add(s);
-            String lista2 = klasa.lista_Customerów.toString();
+            data.lista_Customerów.add(s);
+            String lista2 = data.lista_Customerów.toString();
             textArea1.append("added new customer: " + s.toString());
             textArea1.append(lista2 + newline);
 
@@ -205,11 +205,11 @@ private void createTable() {
         if (source == removeCustomer) {
             String t1 = textField3.getText();
             textArea1.append(t1 + newline);
-            String todelete = String.valueOf(klasa.removeCustomer(t1));
-            String text1 = klasa.lista_Customerów.toString();
+            String todelete = String.valueOf(data.removeCustomer(t1));
+            String text1 = data.lista_Customerów.toString();
             setBackground(Color.BLUE);
 
-            text1 = klasa.lista_Customerów.toString();
+            text1 = data.lista_Customerów.toString();
 
             textArea1.append(text1 + newline);
             textArea1.append("deleted customer: " + todelete);
@@ -218,10 +218,10 @@ private void createTable() {
         }
 
         if (source == sortujPoPktButton) {
-            String text1 = klasa.lista_Customerów.toString();
+            String text1 = data.lista_Customerów.toString();
             setBackground(Color.BLUE);
-            klasa.SortByPoints();
-            text1 = klasa.lista_Customerów.toString();
+            data.SortByPoints();
+            text1 = data.lista_Customerów.toString();
             textArea1.append("Sorted by points list of customers: \n");
             textArea1.append(text1 + newline);
 
@@ -229,9 +229,9 @@ private void createTable() {
         }
 
         if (source == wyświetlGrupyCustomerówButton){
-            String t1 = klasa.grupa_1.toString();
-            String t2 = klasa.grupa_2.toString();
-            String t3 = klasa.grupa_3.toString();
+            String t1 = data.grupa_1.toString();
+            String t2 = data.grupa_2.toString();
+            String t3 = data.grupa_3.toString();
             String p1 = "GRUPA 1: ";
             String p2 = "GRUPA 2: ";
             String p3 = "GRUPA 3: ";
@@ -246,7 +246,7 @@ private void createTable() {
         if (source == wyszukajPoNazwiskuButton){
             String t1 = textField3.getText();
             textArea1.append(t1 + newline);
-            Customer wyszukany = klasa.search(t1);
+            Customer wyszukany = data.search(t1);
             String pom = wyszukany.toString();
             textArea1.append("found customer: "+pom);
             textField1.selectAll();

@@ -1,6 +1,6 @@
 package demoui;
 import ui.MainUI;
-import ui.Class;
+import ui.GroupCustomers;
 
 import javax.swing.*;
 import java.awt.*;

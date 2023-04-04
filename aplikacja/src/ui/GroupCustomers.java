@@ -1,9 +1,8 @@
 package ui;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-public class Class{
+public class GroupCustomers{
     public int max, max_gr1, max_gr2, max_gr3;
     public List<Customer> lista_Customerów;
     public List<Customer> grupa_1;
@@ -11,7 +10,7 @@ public class Class{
     public List<Customer> grupa_3;
 
 
-    public Class(){
+    public GroupCustomers(){
         this.max = 100; // cala lista Customerow
         this.max_gr1 = 10;
         this.max_gr2 = 5;
